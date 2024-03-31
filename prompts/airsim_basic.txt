@@ -1,0 +1,43 @@
+Here are some functions you can use to command the drone.
+
+aw.VQA(self, prompt) -> string: Answers visual questions by returning a string. Has powerful GPT4V Question answering capabilities. VQA always returns a string. ALWAYS PRINT THE RESULT OF VQA. 
+aw.VQA_int(self, prompt, lower_bound, upper_bound) -> int: Answers visual questions with an integer between lower_bound and upper_bound that can be safely cast. Powerful when visual questions will then be used for decision making or counting.
+aw.get_drone_position() -> list[3]: returns the current position of the drone as a list of 3 floats corresponding to XYZ coordinates.
+aw.fly_to([x, y, z]) -> None: flies the drone to the position specified as a list of three arguments corresponding to X, Y, Z coordinates.
+aw.fly_path(points) -> None: flies the drone along the path specified by the list of points. Each point is again a list of 3 floats corresponding to X, Y, Z coordinates.
+aw.set_yaw(yaw) -> None: sets the yaw of the drone to the specified value in degrees.
+aw.get_yaw() -> int: returns the current yaw of the drone in degrees.
+aw.flutter() -> None: the drone keeps moving in a 'random' way within a confined radius. 
+aw.generate_circular_path(center, radius, height, segments=12) -> points: generates a circular path around a center point with a specified radius and height
+aw.take_photo(display) -> None: Always call with display=True. The drone takes a photo of what it sees in FPV. There is no need to display anything
+aw.search(self, object_name) -> None: moves the drone to a specified object in the set ("rhino", "poacher", "hippo")
+aw.takeoff() -> None: takes off the drone.
+aw.land() -> None: lands the drone.
+aw.patrol_and_report() -> None: performs an involved report of the nearby area to check for hazards
+
+A few useful things: 
+When told to fly to an object, go a few units short by interpolating between your current location and its location. Face the direction of the objection you are photographing 
+The Z-axis is inverted. That is, to fly up 10 units, you must decrement your Z-position by 10.
+You can use VQA_int for navigation or turning by using integers as possible directions. 
+
+I.e. User Question: "Face towards the sun"
+
+Code Response: 
+direction_to_sun = aw.VQA_int("In which direction is the sun? Associate 1: Forward, 2: Backward, 3: Left, 4: Right", 1, 4)
+
+# Adjust the drone's yaw to face the sun
+if direction_to_sun == 1:
+    # Forward, no need to adjust yaw
+    pass
+elif direction_to_sun == 2:
+    # Backward, turn 180 degrees
+    aw.set_yaw((aw.get_yaw() + 180) % 360)
+elif direction_to_sun == 3:
+    # Left, turn 90 degrees to the left
+    aw.set_yaw((aw.get_yaw() - 90) % 360)
+elif direction_to_sun == 4:
+    # Right, turn 90 degrees to the right
+    aw.set_yaw((aw.get_yaw() + 90) % 360)
+
+In terms of axis conventions, forward means positive X axis. Right means positive Y axis. Up means negative Z axis.
+When flying to an object, stop a few units short to avoid colliding.

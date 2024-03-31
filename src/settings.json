@@ -1,0 +1,219 @@
+{
+    "SettingsVersion": 1.2,
+    "SimMode": "Multirotor",
+    "Vehicles": {
+        "Drone1": {
+            "VehicleType": "SimpleFlight",
+            "X": 0,
+            "Y": 0,
+            "Z": 0,
+            "Yaw": 0
+        }
+    },
+    "ClockSpeed": 1.0,
+    "CameraDefaults": {
+        "CaptureSettings": [
+            {
+                "ImageType": 0,
+                "Width": 1920,   
+                "Height": 1080,
+                "FOV_Degrees": 90
+            },
+            {
+                "ImageType": 1,
+                "Width": 1920,   
+                "Height": 1080,
+                "FOV_Degrees": 90
+            },
+            {
+                "ImageType": 2,
+                "Width": 1920,
+                "Height": 1080,
+                "FOV_Degrees": 90
+            },
+            {
+                "ImageType": 3,
+                "Width": 1920,   
+                "Height": 1080,
+                "FOV_Degrees": 90
+            },
+            {
+                "ImageType": 4,
+                "Width": 1920,   
+                "Height": 1080,
+                "FOV_Degrees": 90
+            },
+            {
+                "ImageType": 5,
+                "Width": 1920,
+                "Height": 1080,
+                "FOV_Degrees": 90
+            },
+            {
+                "ImageType": 6,
+                "Width": 1920,   
+                "Height": 1080,
+                "FOV_Degrees": 90
+            },
+            {
+                "ImageType": 7,
+                "Width": 1920,   
+                "Height": 1080,
+                "FOV_Degrees": 90
+            },
+            {
+                "ImageType": 8,
+                "Width": 1920,
+                "Height": 1080,
+                "FOV_Degrees": 90
+            },
+            {
+                "ImageType": 9,
+                "Width": 1920,
+                "Height": 1080,
+                "FOV_Degrees": 90
+            }
+        ],
+        "Gimbal": {
+            "Stabilization": 0,
+            "Pitch": 60
+        }
+    },
+    "ExternalCameras": {
+        "fixed": {
+            "X": 86, "Y": -12, "Z": -200,
+            "Pitch": -90, "Roll": 0, "Yaw": 0,
+            "CaptureSettings": [
+                {
+                    "ImageType": 0,
+                    "Width": 3840,   
+                    "Height": 2160,
+                    "FOV_Degrees": 90
+                },
+                {
+                    "ImageType": 1,
+                    "Width": 3840,   
+                    "Height": 2160,
+                    "FOV_Degrees": 90
+                },
+                {
+                    "ImageType": 2,
+                    "Width": 3840,   
+                    "Height": 2160,
+                    "FOV_Degrees": 90
+                },
+                {
+                    "ImageType": 3,
+                    "Width": 3840,   
+                    "Height": 2160,
+                    "FOV_Degrees": 90
+                },
+                {
+                    "ImageType": 4,
+                    "Width": 3840,   
+                    "Height": 2160,
+                    "FOV_Degrees": 90
+                },
+                {
+                    "ImageType": 5,
+                    "Width": 3840,   
+                    "Height": 2160,
+                    "FOV_Degrees": 90
+                },
+                {
+                    "ImageType": 6,
+                    "Width": 3840,   
+                    "Height": 2160,
+                    "FOV_Degrees": 90
+                },
+                {
+                    "ImageType": 7,
+                    "Width": 3840,   
+                    "Height": 2160,
+                    "FOV_Degrees": 90
+                },
+                {
+                    "ImageType": 8,
+                    "Width": 3840,   
+                    "Height": 2160,
+                    "FOV_Degrees": 90
+                },
+                {
+                    "ImageType": 9,
+                    "Width": 3840,   
+                    "Height": 2160,
+                    "FOV_Degrees": 90
+                }
+            ]
+        },
+        "fixed_low": {
+            "X": 86, "Y": -12, "Z": -200,
+            "Pitch": -90, "Roll": 0, "Yaw": 0,
+            "CaptureSettings": [
+                {
+                    "ImageType": 0,
+                    "Width": 1280,   
+                    "Height": 720,
+                    "FOV_Degrees": 90
+                },
+                {
+                    "ImageType": 1,
+                    "Width": 1280,   
+                    "Height": 720,
+                    "FOV_Degrees": 90
+                },
+                {
+                    "ImageType": 2,
+                    "Width": 1280,   
+                    "Height": 720,
+                    "FOV_Degrees": 90
+                },
+                {
+                    "ImageType": 3,
+                    "Width": 1280,   
+                    "Height": 720,
+                    "FOV_Degrees": 90
+                },
+                {
+                    "ImageType": 4,
+                    "Width": 1280,   
+                    "Height": 720,
+                    "FOV_Degrees": 90
+                },
+                {
+                    "ImageType": 5,
+                    "Width": 1280,   
+                    "Height": 720,
+                    "FOV_Degrees": 90
+                },
+                {
+                    "ImageType": 6,
+                    "Width": 1280,   
+                    "Height": 720,
+                    "FOV_Degrees": 90
+                },
+                {
+                    "ImageType": 7,
+                    "Width": 1280,   
+                    "Height": 720,
+                    "FOV_Degrees": 90
+                },
+                {
+                    "ImageType": 8,
+                    "Width": 1280,   
+                    "Height": 720,
+                    "FOV_Degrees": 90
+                },
+                {
+                    "ImageType": 9,
+                    "Width": 1280,
+                    "Height": 720,
+                    "FOV_Degrees": 90
+                }
+            ]
+        }
+    },
+    "SubWindows": [
+        {"WindowID": 2, "CameraName": "fixed_low", "ImageType": 0, "VehicleName": "", "Visible": true, "External": true}
+    ]
+}
