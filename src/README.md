@@ -10,12 +10,12 @@ This calls for a solution that can successfully deter poachers from more areas a
 
 We have built software for autonomous drones that can be controlled with natural language for:
 
-Autonomous patrols of endangered species
-Using thermal imaging cameras, our autonomous drones can patrol large swaths of land at any time of day. Open-ended CV will identify and monitor species that are endangered or at risk of poaching.
-Detecting poachers and notifying law enforcement
-When a drone detects potential poachers, it notifies nearby rangers or law enforcement with critical textual and visual data, enabling rapid, effective responses.
-High-level reasoning
-By leveraging LLMs, our drones assess the environment for any potential hazards such as poachers or fire precursors. They can also understand and execute complex instructions, even from untrained operators.
+1. Autonomous patrols of endangered species
+  - Using thermal imaging cameras, our autonomous drones can patrol large swaths of land at any time of day. Open-ended CV will identify and monitor species that are endangered or at risk of poaching.
+2. Detecting poachers and notifying law enforcement
+  - When a drone detects potential poachers, it notifies nearby rangers or law enforcement with critical textual and visual data, enabling rapid, effective responses.
+3. High-level reasoning
+  - By leveraging LLMs, our drones assess the environment for any potential hazards such as poachers or fire precursors. They can also understand and execute complex instructions, even from untrained operators.
 
 ## How we built it
 
@@ -26,7 +26,7 @@ We use AirSim, a drone simulator built on the Unreal Engine and we add MLLM inte
 AirSim has been deprecated for over 2 years, so we ran into some issues with building it on macOS. Thankfully, we had some Windows laptops to run it on. We also ran into some issues with accuracy of computer vision models in the Unreal Engine environments but we were able to use the GPT-4 API instead to significantly improve performance.
 
 ## Accomplishments that we're proud of
-One of the biggest milestones was getting the infrared detector to identify humans (poachers) much better than the human eye.
+Two of the biggest milestones were setting up natural language control systems and getting the infrared detector to identify humans (poachers) much better than the human eye.
 
 ## What we learned
 
