@@ -1,5 +1,7 @@
 # EcoGuardian: LLM-Powered Wildlife Preservation Drones
 
+See our [DevPost writeup](https://devpost.com/software/ecoguardian) for more information.
+
 ## Setup (Windows only)
 1. Install [Unreal Engine](https://www.unrealengine.com/en-US) and build [AirSim](https://microsoft.github.io/AirSim/build_windows).
 2. Setup the [conda](https://www.anaconda.com/) environment with
@@ -13,3 +15,9 @@ conda activate ecoguardian
 ## Running
 1. Run the AirSim simulation as `./run.bat` from the unzipped folder.
 2. Run `python chatgpt_airsim.py` or `python manual_airsim.py` from the conda environment.
+
+See the [AirSim docs](https://microsoft.github.io/AirSim/) for more in-depth API and settings information.
+
+## Demo
+
+[![](ecoguardian.png)](https://www.youtube.com/watch?v=U9fuctS5yNI)
